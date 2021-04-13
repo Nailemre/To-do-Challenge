@@ -1,4 +1,4 @@
-import Form from "./";
+import Form from "./Form";
 import ListItem from "../List/ListItem";
 import { useState } from "react";
 import "./card.scss";

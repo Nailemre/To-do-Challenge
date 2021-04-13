@@ -1,6 +1,4 @@
-
-  
-  .wrapper {
+ .wrapper {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -22,7 +20,15 @@
     box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
    
 }
-.ekle{
+.create{
    
     
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.delete{
+    position: abolute;
+    top: auto;
+    left:auto;
 }
