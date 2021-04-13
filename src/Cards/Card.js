@@ -31,6 +31,7 @@ function Card() {
         <Form
           onSubmit={(event) => handleSubmit(event)}
           value={inputValue}
+           
           onChange={(event) => setInputValue(event.target.value)}
         />
         <ul>

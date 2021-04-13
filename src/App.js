@@ -4,20 +4,24 @@ import { useState } from "react";
 
 
 export default function App() {
+  
   const [cards, setCards] = useState([]);
-
-  const addClick = (index) => {
+  const [count, setCount] = useState(0);
+  const addClick = () => {
     let newList = cards.slice();
-    newList.push(index);
-    console.warn(newList)
-
+    setCount(count + 1);
+    newList.push(count);
+   
+    console.log(newList)
     return setCards(newList);
   };
 
   const removeClick = (index) => {
-    console.log(index);
+    
     let List = cards.slice();
-    List.splice(index, 1);
+    List.splice(cards[index], 1);
+    console.log(List)
+   // setCount(count -1);
     
     return setCards(List);
   };
@@ -26,11 +30,13 @@ export default function App() {
     <div>
       <ul>
         {cards.map((card, index) => {
+          console.log(card)
           return (
             <ListCard
-              key={index}
-              card={card}
-              remove={() => removeClick(index)}
+            
+              key={card}
+              
+              remove={() => removeClick(card)}
             />
           );
         })}
