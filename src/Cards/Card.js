@@ -1,9 +1,9 @@
-import Form from "./Form";
-import ListItem from "./ListItem";
+import Form from "../Form";
+import ListItem from "../ListItem";
 import { useState } from "react";
-import "./Form.scss";
+import "./card.scss";
 
- function Card() {
+function Card() {
   const [inputValue, setInputValue] = useState("");
   const [todos, setTodos] = useState([]);
 
@@ -27,8 +27,7 @@ import "./Form.scss";
 
   return (
     <>
-       <div className="wrapper">
-        <div className="todo-card">
+      <div className="todo-card">
         <Form
           onSubmit={(event) => handleSubmit(event)}
           value={inputValue}
@@ -45,7 +44,6 @@ import "./Form.scss";
             );
           })}
         </ul>
-        </div>
       </div>
     </>
   );

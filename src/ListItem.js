@@ -1,12 +1,14 @@
 import React from "react";
-import "./Listitem.css";
+import "./Cards/card.scss";
+// import Card from "./Card"
 const ListItem = ({ todo, remove }) => {
   return (
     <div>   
-      <input type="checkbox"></input> 
-      <label>{todo.name}</label>
+       
       
-      <button onClick={remove} classaName="button">
+      <label><input type="checkbox"></input>  {todo.name}</label>
+      
+      <button onClick={remove} className="button">
         Sil
       </button>
     </div>
