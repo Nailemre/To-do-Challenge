@@ -9,10 +9,6 @@ function Card(remove) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (inputValue === "") {
-      return alert("Bisey yazmadiniz, lutfen bisey yaziniz.");
-    }
-
     const todoItems = todos;
     todoItems.splice(0, 0, { name: inputValue });
     setTodos(todoItems);
@@ -27,10 +23,6 @@ function Card(remove) {
 
   return (
     <>
-      <div className="todo-card">
-      <button onClick={remove} className="delete">
-        delete
-      </button>
         <Form
           onSubmit={(event) => handleSubmit(event)}
           value={inputValue}
@@ -49,7 +41,6 @@ function Card(remove) {
             );
           })}
         </ul>
-      </div>
     </>
   );
 }

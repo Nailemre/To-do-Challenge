@@ -1,7 +1,7 @@
-
 import ListCard from "../List/ListCard";
 import { useState } from "react";
-
+import "./AllCard.scss";
+import "../Login/Login.css";
 export default function AllCards() {
   const [cards, setCards] = useState([]);
   const [count, setCount] = useState(0);
@@ -23,18 +23,30 @@ export default function AllCards() {
   };
 
   return (
-    <div>
-      <ul>
-        {cards.map((card) => {
-          
-          return <ListCard key={card} remove={() => removeClick(card)} />;
-        })}
-      </ul>
+    <div className="parent">
+      <div className="leftmenu">
+        <div className="usercard">
+          <img src="https://p.kindpng.com/picc/s/78-785827_user-profile-avatar-login-account-male-user-icon.png" alt="Avatar" className="avatar"></img>
+          <div className="usercontainer">
+            
+              {JSON.parse(localStorage.getItem("myData")).firstName +' '+ JSON.parse(localStorage.getItem("myData")).secondName}
+            
+            
+          </div>
+        </div>
+      </div>
+      <div className="rightmenu">
+        <ul>
+          {cards.map((card) => {
+            return <ListCard key={card} remove={() => removeClick(card)} />;
+          })}
+        </ul>
 
-      <div className="todo-card">
-        <button onClick={addClick} className="create">
-          Create
-        </button>
+        <div className="todo-card">
+          <button onClick={addClick} className="submit">
+            Add Card
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -1,11 +1,25 @@
 import AllCards from "./AllCards/AllCards";
+import Login from  "./Login/Login"
+import { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 
-export default function App() {
- 
-  return (
-    <div>
-      <AllCards/>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Switch>
+          <Route path="/todo-cards">
+            <AllCards />
+          </Route>
+          <Route path="/">
+            <Login />
+          </Route>
+        </Switch>
+      </Router>
+    );
+  }
 }
+
+export default App;
+

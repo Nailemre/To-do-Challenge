@@ -1,16 +1,15 @@
 import React from "react";
 
-
 const ListItem = ({ todo, remove }) => {
   return (
     <div>
-      <label>
-        <input type="checkbox"></input> {todo.name}
-      </label>
-
-      <button onClick={remove} className="button">
-        Sil
-      </button>
+      <ul>
+        <li>
+        <input type="checkbox"></input>
+          {todo.name}
+          <span className="close" onClick={remove}>&times;</span>
+        </li>
+      </ul>
     </div>
   );
 };

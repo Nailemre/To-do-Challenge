@@ -1,18 +1,21 @@
 import React from "react";
 
-
-const Form = ({ onSubmit, value, onChange,id }) => {
+const Form = ({ onSubmit, value, onChange, id }) => {
+ 
   return (
     <form onSubmit={onSubmit}>
+     
       <input
+        className="input-style"
         onChange={onChange}
         value={value}
         placeholder="Planın nedir ? "
         id={id}
         type="text"
+        required
       />
       <button type="text" className="button">
-        Add
+        +
       </button>
     </form>
   );
