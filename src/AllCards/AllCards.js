@@ -1,7 +1,7 @@
 import ListCard from "../List/ListCard";
 import { useState } from "react";
 import "./AllCard.scss";
-import "../Login/Login.css";
+
 export default function AllCards() {
   const [cards, setCards] = useState([]);
   const [count, setCount] = useState(0);
@@ -43,7 +43,7 @@ export default function AllCards() {
         </ul>
 
         <div className="todo-card">
-          <button onClick={addClick} className="submit">
+          <button onClick={addClick} className="sag-ust side-btn">
             Add Card
           </button>
         </div>
