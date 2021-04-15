@@ -12,6 +12,7 @@ code {
     monospace;
 }
 
+
 .sag-ust {
   width: 100%;
 color: rgb(38, 50, 56);
@@ -77,11 +78,37 @@ ul li:hover {
   color: grey;
   font-size:x-large;
 }
+.add-button{
+  position: absolute;
+  transform: translate(0%, -50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: grey;
+  font-size:x-large;
+}
 
 .form-top{
   margin-top: 25%;
 }
 .close:hover {background: #bbb;}
 .input-style{
+  width: 80%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
   margin-bottom:10px;
 }

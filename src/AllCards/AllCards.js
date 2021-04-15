@@ -43,7 +43,7 @@ export default function AllCards() {
         </ul>
 
         <div className="todo-card">
-          <button onClick={addClick} className="sag-ust side-btn">
+          <button onClick={addClick} className="addbtn">
             Add Card
           </button>
         </div>
