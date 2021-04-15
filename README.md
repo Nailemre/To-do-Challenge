@@ -1,6 +1,6 @@
 # React js to do app
 
-You can look at [Clicl it ](https://condescending-kirch-735ec5.netlify.app/).
+You can look at [Click it ](https://condescending-kirch-735ec5.netlify.app/).
 
 ## If you want to download
 
